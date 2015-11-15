@@ -6,6 +6,15 @@ A JavaScript implementation of the [binary heap](http://www.growingwiththeweb.co
 
 ![](http://www.growingwiththeweb.com/images/2013/01/26/minheap.svg)
 
+## Features
+
+- 100% test coverage
+- Supports all common heap operations\*
+- Store keys with optional associated values
+- Optional custom compare function that can utilize both key and value to give full control over the order of the data
+
+\* except [delete](https://github.com/Tyriar/js-binary-heap/issues/3) and [decrease key](https://github.com/Tyriar/js-binary-heap/issues/2)
+
 ## Install
 
 ```bash
@@ -14,11 +23,61 @@ npm install --save @tyriar/binary-heap
 
 ## Usage
 
-TODO
+```javascript
+// Import npm module
+var BinaryHeap = require('@tyriar/binary-heap';
+
+// Construct BinaryHeap
+var heap = new BinaryHeap();
+// Insert keys only
+heap.insert(3);
+heap.insert(7);
+// Insert keys and values
+heap.insert(8, {foo: 'bar'});
+heap.insert(1, {foo: 'baz'});
+
+// Extract all nodes in order
+while (!heap.isEmpty()) {
+  var node = heap.extractMinimum();
+  console.log('key: ' + node.key + ', value: ' + node.value);
+}
+// > key: 1, value: [object Object]
+// > key: 3, value: undefined
+// > key: 7, value: undefined
+// > key: 8, value: [object Object]
+
+// Construct custom compare BinaryHeap
+heap = new BinaryHeap(function (a, b) {
+  return (a.key + a.value).localeCompare(b.key + b.value);
+});
+heap.insert('2', 'B');
+heap.insert('1', 'a');
+heap.insert('1', 'A');
+heap.insert('2', 'b');
+
+// Extract all nodes in order
+while (!heap.isEmpty()) {
+  var node = heap.extractMinimum();
+  console.log('key: ' + node.key + ', value: ' + node.value);
+}
+// > key: 1, value: a
+// > key: 1, value: A
+// > key: 2, value: b
+// > key: 2, value: B
+```
 
 ## Operation time complexity
 
-TODO
+| Operation      | Complexity |
+| -------------- | ---------- |
+| buildHeap      | Θ(n)       |
+| clear          | Θ(1)       |
+| extractMinimum | Θ(log n)   |
+| findMinimum    | Θ(1)       |
+| insert         | Θ(log n)   |
+| isEmpty        | Θ(1)       |
+| size           | Θ(1)       |
+| union          | Θ(n)       |
 
 ## API
 
