@@ -127,6 +127,7 @@ BinaryHeap.prototype.union = function (otherHeap) {
 /**
  * Compares two nodes with each other.
  *
+ * @private
  * @param {Object} a The first key to compare.
  * @param {Object} b The second key to compare.
  * @return -1, 0 or 1 if a < b, a == b or a > b respectively.
@@ -144,6 +145,7 @@ BinaryHeap.prototype.compare = function (a, b) {
 /**
  * Heapifies a node.
  *
+ * @private
  * @param {BinaryHeap} heap The heap containing the node to heapify.
  * @param {number} i The index of the node to heapify.
  */
@@ -168,6 +170,7 @@ function heapify(heap, i) {
 /**
  * Builds a heap from a node array, this will discard the heap's current data.
  *
+ * @private
  * @param {BinaryHeap} heap The heap to override.
  * @param {Node[]} nodeArray The array of nodes for the new heap.
  */
@@ -181,6 +184,7 @@ function buildHeapFromNodeArray(heap, nodeArray) {
 /**
  * Swaps two values in an array.
  *
+ * @private
  * @param {Array} array The array to swap on.
  * @param {number} a The index of the first element.
  * @param {number} a The index of the second element.
@@ -196,6 +200,7 @@ function swap(array, a, b) {
 /**
  * Gets the index of a node's parent.
  *
+ * @private
  * @param {number} i The index of the node to get the parent of.
  * @return {number} The index of the node's parent.
  */
@@ -209,6 +214,7 @@ function getParent(i) {
 /**
  * Gets the index of a node's left child.
  *
+ * @private
  * @param {number} i The index of the node to get the left child of.
  * @return {number} The index of the node's left child.
  */
@@ -219,6 +225,7 @@ function getLeft(i) {
 /**
  * Gets the index of a node's right child.
  *
+ * @private
  * @param {number} i The index of the node to get the right child of.
  * @return {number} The index of the node's right child.
  */
