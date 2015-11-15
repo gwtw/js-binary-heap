@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Tyriar/js-binary-heap",
   "devDependencies": {
-    "@tyriar/heap-tests": "^0.1.1",
+    "@tyriar/heap-tests": "^0.2.4",
     "ava": "*",
     "coveralls": "^2.11.4",
     "documentation-readme": "^2.1.0",
