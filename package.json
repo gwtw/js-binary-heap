@@ -1,6 +1,6 @@
 {
   "name": "@tyriar/binary-heap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An implementation of the binary heap data structure",
   "scripts": {
     "doc": "documentation-readme -s \"API\"",
