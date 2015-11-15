@@ -9,7 +9,7 @@ A JavaScript implementation of the [binary heap](http://www.growingwiththeweb.co
 ## Install
 
 ```bash
-npm install --save @tyriar/fibonacci-heap
+npm install --save @tyriar/binary-heap
 ```
 
 ## Usage

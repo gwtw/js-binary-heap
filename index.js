@@ -29,14 +29,14 @@ var BinaryHeap = function (customCompare) {
  * key array.
  */
 BinaryHeap.prototype.buildHeap = function (keys, values) {
-  if (keys.length !== values.length) {
+  if (typeof values !== 'undefined' && values.length !== keys.length) {
     throw new Error('Key array must be the same length as value array');
   }
 
   var nodeArray = [];
 
   for (var i = 0; i < keys.length; i++) {
-    nodeArray.push(new Node(keys[i], values[i]));
+    nodeArray.push(new Node(keys[i], values ? values[i] : undefined));
   }
 
   buildHeapFromNodeArray(this, nodeArray);
