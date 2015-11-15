@@ -12,10 +12,9 @@
     "url": "https://github.com/Tyriar/js-binary-heap.git"
   },
   "keywords": [
-    "A*",
+    "binary heap",
     "computer science",
     "data structure",
-    "dijkstra",
     "heap",
     "priority queue",
     "tree"
