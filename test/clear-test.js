@@ -1,22 +1,7 @@
-import test from 'ava';
+'use strict';
+
 import Heap from '../';
+import test from 'ava';
+import testHelper from '@tyriar/heap-tests/clear-tests';
 
-test('should set the heap\'s size to 0', t => {
-  var heap = new Heap();
-  heap.insert(1, null);
-  heap.insert(2, null);
-  heap.insert(3, null);
-  heap.clear();
-  t.is(heap.size(), 0);
-  t.end();
-});
-
-test('should set the heap\'s minimum node to undefined', t => {
-  var heap = new Heap();
-  heap.insert(1, null);
-  heap.insert(2, null);
-  heap.insert(3, null);
-  heap.clear();
-  t.is(heap.findMinimum(), undefined);
-  t.end();
-});
+testHelper.run(test, Heap);
