@@ -1,6 +1,7 @@
-# js-binary-heap  [![NPM version](https://img.shields.io/npm/v/@tyriar/binary-heap.svg?style=flat)](https://www.npmjs.org/package/@tyriar/binary-heap)
+# js-binary-heap
 
-[![Build Status](http://img.shields.io/travis/gwtw/js-binary-heap.svg?style=flat)](http://travis-ci.org/gwtw/js-binary-heap) [![Coverage Status](https://img.shields.io/coveralls/gwtw/js-binary-heap.svg?branch=master&service=github)](https://coveralls.io/github/gwtw/js-binary-heap?branch=master)
+[![Build Status](https://travis-ci.org/gwtw/js-binary-heap.svg?branch=master)](https://travis-ci.org/gwtw/js-binary-heap)
+[![Coverage Status](https://img.shields.io/coveralls/gwtw/js-binary-heap.svg?branch=master&service=github)](https://coveralls.io/github/gwtw/js-binary-heap?branch=master)
 
 A JavaScript implementation of the [binary heap](http://www.growingwiththeweb.com/2013/01/data-structure-binary-heap.html) data structure.
 
