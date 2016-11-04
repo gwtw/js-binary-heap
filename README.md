@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/gwtw/js-binary-heap.svg?branch=master)](https://travis-ci.org/gwtw/js-binary-heap)
 [![Coverage Status](https://coveralls.io/repos/github/gwtw/js-binary-heap/badge.svg?branch=master)](https://coveralls.io/github/gwtw/js-binary-heap?branch=master)
 
-A JavaScript implementation of the [binary heap](http://www.growingwiththeweb.com/2013/01/data-structure-binary-heap.html) data structure.
+A JavaScript implementation of the [binary heap](http://www.growingwiththeweb.com/data-structures/binary-heap/overview/) data structure.
 
-![](http://www.growingwiththeweb.com/images/2013/01/26/minheap.svg)
+![](http://www.growingwiththeweb.com/images/data-structures/binary-heap/minheap.svg)
 
 ## Features
 
