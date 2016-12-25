@@ -186,7 +186,7 @@ function buildHeapFromNodeArray(heap, nodeArray) {
  * @private
  * @param {Array} array The array to swap on.
  * @param {number} a The index of the first element.
- * @param {number} a The index of the second element.
+ * @param {number} b The index of the second element.
  */
 function swap(array, a, b) {
   var temp = array[a];
