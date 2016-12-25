@@ -64,7 +64,6 @@ BinaryHeap.prototype.extractMinimum = function () {
   }
   var min = this.list[0];
   this.list[0] = this.list.pop();
-  this.list[0].i = 0;
   heapify(this, 0);
   return min;
 };
@@ -193,8 +192,6 @@ function swap(array, a, b) {
   var temp = array[a];
   array[a] = array[b];
   array[b] = temp;
-  array[a].i = a;
-  array[b].i = b;
 }
 
 /**
